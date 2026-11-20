@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daniel Ramos: web CV (under construction)</title>
+<meta name="description" content="The web CV of Daniel Ramos is under construction. Meanwhile, find me on LinkedIn or by email.">
+<style>
+  :root {
+    --bg: #eef2f4;
+    --ink: #1b2b34;
+    --muted: #4d6069;
+    --accent: #1f7a8c;
+    --line: #b9c7cd;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #11191d;
+      --ink: #e6eef1;
+      --muted: #9db0b8;
+      --accent: #5cc0d3;
+      --line: #35474f;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
+    line-height: 1.6;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1.5rem;
+  }
+  main { width: 100%; max-width: 34rem; }
+  svg { display: block; width: 100%; max-width: 15rem; height: auto; margin-bottom: 2rem; }
+  .edge { stroke: var(--line); stroke-width: 1.2; fill: none; }
+  .node { fill: var(--accent); }
+  .node.quiet { fill: var(--muted); }
+  h1 {
+    font-family: "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(2.4rem, 8vw, 3.4rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.6rem;
+  }
+  .status { color: var(--accent); font-weight: 600; margin: 0 0 1.25rem; }
+  p { margin: 0 0 1.5rem; color: var(--muted); max-width: 30rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 1.75rem; }
+  a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.3em;
+  }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
+
+  /* One page-load moment: the network draws itself. */
+  @media (prefers-reduced-motion: no-preference) {
+    .edge { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw 1.4s ease-out forwards; }
+    .edge:nth-of-type(2) { animation-delay: 0.15s; }
+    .edge:nth-of-type(3) { animation-delay: 0.3s; }
+    .edge:nth-of-type(4) { animation-delay: 0.45s; }
+    .edge:nth-of-type(5) { animation-delay: 0.6s; }
+    .edge:nth-of-type(6) { animation-delay: 0.75s; }
+    .node { opacity: 0; animation: appear 0.6s ease-out forwards; animation-delay: 0.9s; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+    @keyframes appear { to { opacity: 1; } }
+  }
+</style>
+</head>
+<body>
+<main>
+  <svg viewBox="0 0 240 150" role="img" aria-label="A small network of connected points">
+    <path class="edge" pathLength="100" d="M30 110 L80 50"/>
+    <path class="edge" pathLength="100" d="M80 50 L140 90"/>
+    <path class="edge" pathLength="100" d="M80 50 L150 25"/>
+    <path class="edge" pathLength="100" d="M140 90 L205 60"/>
+    <path class="edge" pathLength="100" d="M140 90 L120 130"/>
+    <path class="edge" pathLength="100" d="M150 25 L205 60"/>
+    <circle class="node" cx="30" cy="110" r="5"/>
+    <circle class="node quiet" cx="80" cy="50" r="7"/>
+    <circle class="node" cx="140" cy="90" r="9"/>
+    <circle class="node quiet" cx="150" cy="25" r="5"/>
+    <circle class="node" cx="205" cy="60" r="6"/>
+    <circle class="node quiet" cx="120" cy="130" r="5"/>
+  </svg>
+
+  <h1>Daniel Ramos</h1>
+  <p class="status">My web CV is under construction.</p>
+  <p>It will bring together my experience, events and credentials in one place. In the meantime, you can reach me here.</p>
+
+  <ul>
+    <li><a href="https://www.linkedin.com/in/danielbpramos/">LinkedIn</a></li>
+    <li><a href="mailto:danielramos.personal@gmail.com">danielramos.personal@gmail.com</a></li>
+  </ul>
+</main>
+</body>
+</html>
