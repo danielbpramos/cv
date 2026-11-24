@@ -3,104 +3,381 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Daniel Ramos: web CV (under construction)</title>
-<meta name="description" content="The web CV of Daniel Ramos is under construction. Meanwhile, find me on LinkedIn or by email.">
-<style>
-  :root {
-    --bg: #eef2f4;
-    --ink: #1b2b34;
-    --muted: #4d6069;
-    --accent: #1f7a8c;
-    --line: #b9c7cd;
-    color-scheme: light;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --bg: #11191d;
-      --ink: #e6eef1;
-      --muted: #9db0b8;
-      --accent: #5cc0d3;
-      --line: #35474f;
-      color-scheme: dark;
-    }
-  }
-  * { box-sizing: border-box; }
-  html, body { height: 100%; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Helvetica Neue", Arial, system-ui, sans-serif;
-    line-height: 1.6;
-    display: grid;
-    place-items: center;
-    padding: 2rem 1.5rem;
-  }
-  main { width: 100%; max-width: 34rem; }
-  svg { display: block; width: 100%; max-width: 15rem; height: auto; margin-bottom: 2rem; }
-  .edge { stroke: var(--line); stroke-width: 1.2; fill: none; }
-  .node { fill: var(--accent); }
-  .node.quiet { fill: var(--muted); }
-  h1 {
-    font-family: "Iowan Old Style", Georgia, "Times New Roman", serif;
-    font-weight: 400;
-    font-size: clamp(2.4rem, 8vw, 3.4rem);
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin: 0 0 0.6rem;
-  }
-  .status { color: var(--accent); font-weight: 600; margin: 0 0 1.25rem; }
-  p { margin: 0 0 1.5rem; color: var(--muted); max-width: 30rem; }
-  ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem 1.75rem; }
-  a {
-    color: var(--ink);
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 0.3em;
-  }
-  a:hover { color: var(--accent); }
-  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 2px; }
-
-  /* One page-load moment: the network draws itself. */
-  @media (prefers-reduced-motion: no-preference) {
-    .edge { stroke-dasharray: 100; stroke-dashoffset: 100; animation: draw 1.4s ease-out forwards; }
-    .edge:nth-of-type(2) { animation-delay: 0.15s; }
-    .edge:nth-of-type(3) { animation-delay: 0.3s; }
-    .edge:nth-of-type(4) { animation-delay: 0.45s; }
-    .edge:nth-of-type(5) { animation-delay: 0.6s; }
-    .edge:nth-of-type(6) { animation-delay: 0.75s; }
-    .node { opacity: 0; animation: appear 0.6s ease-out forwards; animation-delay: 0.9s; }
-    @keyframes draw { to { stroke-dashoffset: 0; } }
-    @keyframes appear { to { opacity: 1; } }
-  }
-</style>
+<title>Daniel Ramos: CV</title>
+<meta name="description" content="Extended CV of Daniel Ramos: experience, education, participations and credentials.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <svg viewBox="0 0 240 150" role="img" aria-label="A small network of connected points">
-    <path class="edge" pathLength="100" d="M30 110 L80 50"/>
-    <path class="edge" pathLength="100" d="M80 50 L140 90"/>
-    <path class="edge" pathLength="100" d="M80 50 L150 25"/>
-    <path class="edge" pathLength="100" d="M140 90 L205 60"/>
-    <path class="edge" pathLength="100" d="M140 90 L120 130"/>
-    <path class="edge" pathLength="100" d="M150 25 L205 60"/>
-    <circle class="node" cx="30" cy="110" r="5"/>
-    <circle class="node quiet" cx="80" cy="50" r="7"/>
-    <circle class="node" cx="140" cy="90" r="9"/>
-    <circle class="node quiet" cx="150" cy="25" r="5"/>
-    <circle class="node" cx="205" cy="60" r="6"/>
-    <circle class="node quiet" cx="120" cy="130" r="5"/>
-  </svg>
 
-  <h1>Daniel Ramos</h1>
-  <p class="status">My web CV is under construction.</p>
-  <p>It will bring together my experience, events and credentials in one place. In the meantime, you can reach me here.</p>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-dl" viewBox="0 0 16 16"><path d="M8 2v8m0 0L4.5 6.5M8 10l3.5-3.5M2.5 13.5h11" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 16 16"><path d="M4 1.5h5.5L13 5v9.5H4z M9.5 1.5V5H13" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></symbol>
+  <symbol id="i-link" viewBox="0 0 16 16"><path d="M9 2.5h4.5V7M13.5 2.5L7.5 8.5M11.5 9.5v4h-9v-9h4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-clip" viewBox="0 0 16 16"><path d="M10.5 4.5l-5 5a1.4 1.4 0 0 0 2 2l5.5-5.5a2.8 2.8 0 0 0-4-4L3.5 7.5a4.2 4.2 0 0 0 6 6l4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 16 16"><rect x="1.5" y="3.5" width="13" height="9" rx="1.5" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M2 4.5l6 4.5 6-4.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/></symbol>
+</svg>
 
-  <ul>
-    <li><a href="https://www.linkedin.com/in/danielbpramos/">LinkedIn</a></li>
-    <li><a href="mailto:danielramos.personal@gmail.com">danielramos.personal@gmail.com</a></li>
-  </ul>
-</main>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand serif" href="#top">Daniel Ramos</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#summary">Summary</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#courses">Courses</a>
+      <a href="#participations">Participations</a>
+    </nav>
+    <a class="attach-btn" href="attachments.html"><svg><use href="#i-clip"/></svg><span>Attachments</span></a>
+    <div class="downloads">
+      <a class="btn ghost" href="Daniel_Ramos_CV_Short.pdf" target="_blank" rel="noopener" title="Short CV (PDF)"><svg><use href="#i-dl"/></svg><span>Short CV</span></a>
+      <a class="btn primary" href="Daniel_Ramos_CV_Extended.pdf" target="_blank" rel="noopener" title="Full CV (PDF)"><svg><use href="#i-dl"/></svg><span>Full CV</span></a>
+    </div>
+  </div>
+</header>
+
+
+<div class="layout" id="top">
+  <aside class="sidemenu" aria-label="Entries in this section">
+    <nav id="sidemenu"></nav>
+  </aside>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1 class="serif">Daniel Ramos</h1>
+        <p class="role">Engineering · Project Management · Complex Systems · Innovation</p>
+        <ul class="contact">
+          <li>Vila Nova de Gaia, Portugal</li>
+          <li><a href="mailto:danielramos.personal@gmail.com">danielramos.personal@gmail.com</a></li>
+          <li><a href="https://linkedin.com/in/danielbpramos">LinkedIn</a></li>
+        </ul>
+      </div>
+      <svg viewBox="0 0 240 150" aria-hidden="true">
+        <path class="edge" d="M30 110 L80 50"/><path class="edge" d="M80 50 L140 90"/>
+        <path class="edge" d="M80 50 L150 25"/><path class="edge" d="M140 90 L205 60"/>
+        <path class="edge" d="M140 90 L120 130"/><path class="edge" d="M150 25 L205 60"/>
+        <circle class="node" cx="30" cy="110" r="5"/><circle class="node quiet" cx="80" cy="50" r="7"/>
+        <circle class="node" cx="140" cy="90" r="9"/><circle class="node quiet" cx="150" cy="25" r="5"/>
+        <circle class="node" cx="205" cy="60" r="6"/><circle class="node quiet" cx="120" cy="130" r="5"/>
+      </svg>
+    </div>
+
+    <section class="cv" id="summary" data-label="Summary">
+      <h2 class="serif">Summary</h2>
+      <div class="card">
+        <ul>
+          <li><b>Academic background:</b> Biomedical Engineering, Project Management, Innovation Design, Circular Economy.</li>
+          <li><b>Experience</b> in multilateral projects in Europe and Africa (European Union and World Bank).</li>
+          <li><b>Experience</b> in digital transformation, business analysis &amp; requirements, circular economy, sustainable mobility, business evaluation, social innovation, user research, product-service &amp; systems innovation.</li>
+          <li><b>Experience</b> in the private, public and non-profit sectors.</li>
+          <li>Regular at <b>events</b> as participant, and sometimes organiser and speaker.</li>
+          <li><b>Learning Interests:</b> Complex Adaptive Systems &amp; Network Theory, Integrative Healthcare, (Gen)AI Programming, Narrative Research &amp; Sensemaking, Philosophy, History, Nature-based Solutions.</li>
+          <li><b>Life Interests:</b> Nature, Hiking, Cycling, Sailing, Travelling, Artistic Salons, Roundtables.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv" id="experience" data-label="Experience">
+      <h2 class="serif">Experience</h2>
+      <article class="entry" id="minho-research" data-nav="University of Minho" data-sub="since 2026">
+        <div class="when">Mar. 2026 – present<span class="where">Remote</span></div>
+        <div>
+          <h3><span class="org">University of Minho</span><span class="title">Academic Research (MSc dissertation)</span></h3>
+          <p class="note">To be concluded Jan-Feb 2027.</p><ul>
+  <li>Researching the application of SenseMaker® software as an innovative user requirements elicitation method in the context of Radicle (code forge) product development.</li>
+  <li>SenseMaker® is a narrative-based tool that allows respondents to self-interpret their own narratives at scale according to a bespoke signification framework that stimulates reflexivity and &#34;slow thinking&#34;; it allows visualisation of narratives according to respondent inputs.</li>
+</ul>
+          <div class="meta-row"><span class="tag">research</span><span class="tag">sensemaker</span><span class="tag">requirements-elicitation</span><span class="tag">narrative-research</span><span class="tag">product-development</span></div>
+        </div>
+      </article>
+      <article class="entry" id="rosa-neves" data-nav="Clínica Rosa Neves" data-sub="2025–26">
+        <div class="when">Oct. 2025 – Sep. 2026<span class="where">Espinho &amp; Paredes (Portugal) &amp; remote</span></div>
+        <div>
+          <h3><span class="org">Clínica Médico-Dentária Rosa Neves</span><span class="title">Interim Manager</span></h3><ul>
+  <li>Responsible for operations planning and management, management of support services and vendors (legal, accounting, EHR/CRM, etc.), and staff management for two medical clinics.</li>
+  <li>Optimised processes through the implementation of cloud-based IT systems; recruited medical staff; created a digitised inventory.</li>
+  <li>Managed a M&amp;A preparation process, with business and real estate economic evaluation, and drafted reporting elements.</li>
+</ul>
+          <div class="meta-row"><span class="tag">management</span><span class="tag">operations</span><span class="tag">vendor-management</span><span class="tag">staff-management</span><span class="tag">healthcare</span><span class="tag">it-implementation</span><span class="tag">process-optimisation</span><span class="tag">recruitment</span><span class="tag">inventory</span><span class="tag">mergers-acquisitions</span><span class="tag">business-evaluation</span></div>
+        </div>
+      </article>
+      <article class="entry" id="ceiia" data-nav="CEiiA Consortium" data-sub="2024–25">
+        <div class="when">Oct. 2024 – Jun. 2025<span class="where">Porto (Portugal) &amp; remote with São Paulo (Brazil)</span></div>
+        <div>
+          <h3><span class="org">CEiiA Consortium</span><span class="title">Project Associate (Student)</span></h3>
+          <p class="note">Project consortium consisted of CEiiA, Porto Design Factory (PDF), University of São Paulo, INSPER, FC Porto and SE Palmeiras, within the postgraduate Specialisation &#34;Global Team-based Innovation&#34; at PDF.</p><ul>
+  <li>Sustainable mobility challenge: how can football fans be engaged towards avoiding mobility-associated carbon emissions?</li>
+  <li>Developed a solutions ecosystem (under NDA), including a conceptual digital application, gamified and behavioural interventions, and infrastructural and logistical measures considering the optimisation of mobility flows.</li>
+  <li>Conducted in-person user research through interviews and contextual observation.</li>
+  <li>Delivered final project presentation at Sugar Network Expo event in SAP Labs San Francisco (USA).</li>
+</ul>
+          <div class="meta-row"><span class="tag">product-service-systems-innovation</span><span class="tag">sustainable-mobility</span><span class="tag">user-research</span><span class="tag">behavioural-design</span><span class="tag">distributed-teams</span><span class="tag">presentations</span></div>
+        </div>
+      </article>
+      <article class="entry" id="eit-grant-design" data-nav="EIT Climate-KIC" data-sub="2024">
+        <div class="when">Sep. 2024 – Dec. 2024<span class="where">Remote, with distributed team in Europe</span></div>
+        <div>
+          <h3><span class="org">EIT Climate-KIC</span><span class="title">Circular Economy / Grant Design Consultant (Contractor)</span></h3><ul>
+  <li>Capability development project to assist Slovenian institutions with the design and inclusion of circular and sustainability evaluation criteria in funding calls for proposals.</li>
+  <li>Responsible for collecting, analysing and transferring knowledge in the form of evaluation criteria, good practices and lessons learnt.</li>
+  <li>Recruited European experts and conducted in-depth semi-structured interviews with them; collected and analysed relevant documentation (desk research and first-hand); synthesised knowledge outputs; presented findings and drafted a comprehensive report.</li>
+</ul>
+          <div class="meta-row"><span class="tag">circular-economy</span><span class="tag">public-funding</span><span class="tag">evaluation-criteria</span><span class="tag">policy-analysis</span><span class="tag">interviews</span><span class="tag">report-writing</span><span class="tag">eit-climate-kic</span></div>
+        </div>
+      </article>
+      <article class="entry" id="ventures" data-nav="Own ventures" data-sub="2022–25">
+        <div class="when">Oct. 2022 – Jun. 2025</div>
+        <div>
+          <h3><span class="org">Business Ownership, Development and Management Initiatives</span></h3>
+          <div class="roles">
+            <div class="role-item">
+              <h4>Dona Pizza <span class="sub">· Automatic Pizza Vending</span></h4>
+              <div class="dates">Apr. 2024 – Feb. 2025 · Porto (Portugal)</div>
+              <p class="note">Interrupted due to competing business priorities.</p><ul>
+  <li>Researched equipment manufacturers in loco and tested deployed equipment (Portugal and abroad); negotiated conditions with location holder; consulted legal advisor and co-drafted location contract; consulted cuisine advisors for product development and production procurement.</li>
+</ul>
+              <div class="meta-row"><span class="tag">entrepreneurship</span><span class="tag">negotiation</span><span class="tag">product-development</span><span class="tag">food-and-beverage</span></div>
+            </div>
+            <div class="role-item">
+              <h4>Riversea Porto <span class="sub">· Short-term Rental Accommodation</span></h4>
+              <div class="dates">May 2024 – Oct. 2024 · Porto (Portugal)</div>
+              <p class="note">Interrupted due to competing business priorities.</p><ul>
+  <li>Owned a short-term rental business and took all-round management responsibilities, from operations to unexpected occurrences; managed a centralised multi-vendor reservations platform, support services and vendors, billing and municipal tax reporting.</li>
+</ul>
+              <div class="meta-row"><span class="tag">entrepreneurship</span><span class="tag">hospitality</span><span class="tag">operations</span><span class="tag">vendor-management</span><span class="tag">tax-reporting</span></div>
+            </div>
+            <div class="role-item">
+              <h4>Estação <span class="sub">· Café &amp; Accommodation</span></h4>
+              <div class="dates">Oct. 2022 – Jun. 2025 · Vila Nova de Gaia (Portugal)</div><ul>
+  <li>Drafted winning proposal in a public call, conceding business operation and refurbishment of historic train station building, converting into a café and accommodations.</li>
+  <li>Developed refurbishment project in consultation with technical service providers; monitored refurbishment works; developed business model; monitored licensing processes.</li>
+</ul>
+              <div class="meta-row"><span class="tag">entrepreneurship</span><span class="tag">hospitality</span><span class="tag">project-management</span><span class="tag">business-modelling</span><span class="tag">public-procurement</span><span class="tag">refurbishment</span><span class="tag">licensing</span></div>
+            </div>
+          </div>
+          <div class="meta-row"></div>
+        </div>
+      </article>
+      <article class="entry" id="lbc-remote" data-nav="Leadership Business Consulting" data-sub="2024">
+        <div class="when">Mar. 2024 – Aug. 2024<span class="where">Remote</span></div>
+        <div>
+          <h3><span class="org">Leadership Business Consulting</span><span class="title">Digital Transformation Consultant (Contractor)</span></h3>
+          <p class="note">See next entry for project details.</p><ul>
+  <li>Continued work initiated in Maputo (Mozambique) through to near project closure.</li>
+  <li>Met with project stakeholders (beneficiaries and steering committee) for feedback and clarifications; refined deliverables to meet expectations within project scope.</li>
+</ul>
+          <div class="meta-row"><span class="tag">digital-transformation</span><span class="tag">information-systems</span><span class="tag">stakeholder-engagement</span><span class="tag">world-bank</span><span class="tag">public-administration</span><span class="tag">project-closure</span></div>
+        </div>
+      </article>
+      <article class="entry" id="lbc-maputo" data-nav="Leadership Business Consulting" data-sub="2023">
+        <div class="when">May 2023 – Dec. 2023<span class="where">Maputo (Mozambique)</span></div>
+        <div>
+          <h3><span class="org">Leadership Business Consulting</span><span class="title">Digital Transformation Consultant (AICEP Intern)</span></h3>
+          <p class="note">The first month consisted of training, onboarding and work in Portugal; the rest was spent in Maputo&#39;s office.</p><ul>
+  <li>Consultant in two World Bank-funded digital transformation projects for specification of two new aggregator Information Systems (IS) for public administration institutions of Mozambique:<ul>
+  <li>one to manage imports/exports at national level, involving ministerial and other national authorities;</li>
+  <li>one to manage territorial planning and construction licensing at the local level of Maputo municipality.</li>
+</ul></li>
+  <li>Conducted extensive interviews and review sessions with process owners and decision-makers; mapped and optimised processes, usually from oral reports with limited documentation support; elicited IS requirements; facilitated consultations with subject matter experts on matters of sanitary/phytosanitary and imports/exports compliance, and of IT systems architecture.</li>
+  <li>Met periodically with senior stakeholders from Mozambique&#39;s institutions and World Bank; presented results to them.</li>
+</ul>
+          <div class="meta-row"><span class="tag">digital-transformation</span><span class="tag">requirements-elicitation</span><span class="tag">information-systems</span><span class="tag">process-mapping</span><span class="tag">process-optimisation</span><span class="tag">world-bank</span><span class="tag">public-administration</span><span class="tag">stakeholder-engagement</span><span class="tag">senior-stakeholders</span><span class="tag">interviews</span></div>
+        </div>
+      </article>
+      <article class="entry" id="eit-trainer" data-nav="EIT Climate-KIC" data-sub="2022">
+        <div class="when">Sep. 2022 – Nov. 2022<span class="where">Remote, with distributed team in Europe</span></div>
+        <div>
+          <h3><span class="org">EIT Climate-KIC</span><span class="title">Assistant Trainer in Circular Economy (Contractor)</span></h3><ul>
+  <li>Co-delivered training sessions of the &#34;Circularity Thinking&#34; training programme for circular economy professionals.</li>
+  <li>Managed e-learning support platforms (Miro, Brightspace, MS Teams); provided administrative support to trainees.</li>
+</ul>
+          <div class="meta-row"><span class="tag">circular-economy</span><span class="tag">training-facilitation</span><span class="tag">e-learning</span><span class="tag">eit-climate-kic</span></div>
+        </div>
+      </article>
+      <article class="entry" id="pip-maribor" data-nav="EIT Climate-KIC PIP / Maribor" data-sub="2019">
+        <div class="when">May 2019 – Nov. 2019<span class="where">Maribor (Slovenia), Lisbon (Portugal) &amp; remote</span></div>
+        <div>
+          <h3><span class="org">EIT Climate-KIC</span><span class="title">Pioneers into Practice (PIP) trainee</span></h3>
+          <h3><span class="org">Municipality of Maribor (MOM)</span><span class="title">Project Assistant to Senior Advisor</span></h3>
+          <p class="note">My work placement, which is the highlight of PIP, took place in Maribor (Slovenia; Sep. - Oct. 2019).</p><ul>
+  <li>In Portugal: responding to a challenge by Municipality of Cascais, co-developed &#39;EC2&#39; - a conceptual digital ecosystem to promote and reward citizens&#39; sustainable behaviours through token earnings spendable across the local economy (e.g. in shared/collective mobility); received hands-on training on Climate-KIC&#39;s Systems Innovation toolkit.</li>
+  <li>In Slovenia and beyond: assisted in interregional cooperation projects funded by the European Union (Interreg programmes Adrion and Alpine Space Greencycle); assisted in preparation of a project application; attended international work meetings and events on sustainability, circular economy and mobility (see &#39;Participations&#39; section).</li>
+  <li>Participated, by application, in the PIP International Workshop in Amsterdam (The Netherlands; Nov. 2019) on systems innovation applied to Climate-KIC&#39;s Deep Demonstration programmes.</li>
+</ul>
+          <div class="meta-row">
+  <a class="attach letter" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKbTEAAAAAASNOQvRAVG5K9m9awqSDk-c?e=VgTwwV" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Recommendation letter</a>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKYjEAAAAAAanJF-kUmLMT4I1akM0ANhQ?e=BHGEe3" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a>
+  <a class="attach media" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCYS03khYY8T6g4ZEWaHvpeAVyMrxrAo3sP3s7tUxN_wU4?e=eWPwon" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Media (climate-kic article)</a>
+  <a class="attach media" href="https://www.facebook.com/climatetalent/photos/2461295827489745" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Media (post)</a><span class="tag">eu-funded-projects</span><span class="tag">interreg</span><span class="tag">international-cooperation</span><span class="tag">sustainability</span><span class="tag">circular-economy</span><span class="tag">mobility</span><span class="tag">public-administration</span><span class="tag">systems-innovation</span><span class="tag">tokenisation</span><span class="tag">project-application</span><span class="tag">climate</span><span class="tag">eit-climate-kic</span></div>
+        </div>
+      </article>
+      <article class="entry" id="aliados" data-nav="Aliados Consulting" data-sub="2019">
+        <div class="when">Jun. 2019 – Jul. 2019<span class="where">Vila Nova de Gaia (Portugal)</span></div>
+        <div>
+          <h3><span class="org">Aliados Consulting</span><span class="title">Circular Economy Researcher (Intern)</span></h3><ul>
+  <li>Developed a comprehensive circular economy knowledge database with international case studies, tools and metrics.</li>
+  <li>Attended meetings with prospective international partners; attended the Circular Cities Initiative event in Guimarães (Portugal) and a Portuguese national network of Sustainable Cities, Food and Agriculture meeting.</li>
+</ul>
+          <div class="meta-row">
+  <a class="attach letter" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICK2jAAAAAAAa7qYZCO0xcNUeWmx-N6Ec8?e=5BIv2d" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Recommendation Letter</a><span class="tag">circular-economy</span><span class="tag">research</span><span class="tag">knowledge-management</span><span class="tag">consulting</span><span class="tag">networking</span></div>
+        </div>
+      </article>
+      <article class="entry" id="udream" data-nav="U.Dream Braga" data-sub="2016–18">
+        <div class="when">Oct. 2016 – Jul. 2018<span class="where">Braga (Portugal)</span></div>
+        <div>
+          <h3><span class="org">U.Dream Braga</span></h3>
+          <p class="note">U.Dream is a non-profit junior enterprise that fulfils the wishes (dreams) of health-compromised children and organises public activation events.</p>
+          <div class="roles">
+            <div class="role-item">
+              <h4>Vice-President for External Relations</h4>
+              <div class="dates">Sep. 2017 – Jul. 2018</div><ul>
+  <li>Member of the General Directorate; responsible for the external relations and marketing through direct initiatives and oversight of both departments via the respective directors.</li>
+  <li>Responsible for institutional partnerships and activation campaigns; organised a recruitment campaign; co-delivered an internal communication training programme; participated in José&#39;s dream fulfilment project.</li>
+</ul>
+              <div class="meta-row"></div>
+            </div>
+            <div class="role-item">
+              <h4>External Relations Associate</h4>
+              <div class="dates">Oct. 2016 – Sep. 2017</div><ul>
+  <li>Expanded the database of donors/partners; organised and participated in &#34;guerrilla marketing&#34; activation campaigns in city centre; organised the VERSUS III event (1000+ attendees); organised Ariana&#39;s dream fulfilment project.</li>
+  <li>Cold-recruited, on street, participants for presentations and events, and applicants to recruitment programme.</li>
+</ul>
+              <div class="meta-row"></div>
+            </div>
+          </div>
+          <div class="meta-row">
+  <a class="attach letter" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQDCbk2CPpbOQJ30gwM4-z6GAWS-Oehiyz18rhPnsIZKDbU?e=FUuwaA" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Recommendation letter</a><span class="tag">non-profit</span><span class="tag">external-relations</span><span class="tag">marketing</span><span class="tag">partnerships</span><span class="tag">events</span><span class="tag">leadership</span><span class="tag">entrepreneurship</span></div>
+        </div>
+      </article>
+      <div class="other" id="other" data-nav="Other" data-sub="Additional experience">
+        <h3>Additional Experience</h3>
+        <ul class="list">
+          <li><span class="date">2020</span><span><span class="what">AI Annotator</span> <span class="detail">· TransPerfect</span></span></li>
+          <li><span class="date">2019</span><span><span class="what">HoReCa B2B Sales</span> <span class="detail">· Soditud</span></span></li>
+          <li><span class="date">2017 - 2019</span><span><span class="what">FC Porto staff in ticket offices, fan support and in-house production</span> <span class="detail">· PPEventos</span></span></li>
+          <li><span class="date">2014 - 2016</span><span><span class="what">Lifeguard</span> <span class="detail">· Tetis &amp; SummerPriority</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv" id="education" data-label="Education">
+      <h2 class="serif">Education</h2>
+      <article class="entry" id="gti" data-nav="Global Team-based Innovation" data-sub="2024–25">
+        <div class="when">2024 – 2025<span class="where">Porto (Portugal)</span></div>
+        <div>
+          <h3><span class="org">Postgraduate Specialisation in Global Team-based Innovation (GTI)</span><span class="title">Technical University of Porto / Porto Design Factory &amp; Sugar Network</span></h3>
+          <p class="note">Duration of 1 academic year, mostly full-time; GTI took the place of the former Stanford ME310; also known as the Product-Service / Systems Innovation specialisation.</p><ul>
+  <li>Curriculum included courses, mentorship and project-based learning, i.e. CEiiA sustainable mobility challenge (see &#39;Experience&#39; section).</li>
+</ul>
+          <div class="courses"><span class="courses-label">Course areas</span><span class="tag course">Agile Project Management</span><span class="tag course">Design Thinking for Innovation</span><span class="tag course">Systems Innovation &amp; Design</span><span class="tag course">User Research</span><span class="tag course">Human Behavioural Biases</span><span class="tag course">UX Design</span><span class="tag course">Modelling &amp; Prototyping</span><span class="tag course">Innovation Management</span><span class="tag course">Communication / Speech</span><span class="tag course">Tokenisation</span></div>
+          <div class="meta-row">
+  <a class="attach letter" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQBEGL6NyKgfRL-zOfK8lyE1AaFZSm6fugpn64TIP8Hmy8U?e=7qaSgp" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Recommendation Letter</a>
+  <a class="attach diploma" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQAZ__gUfQxmQ6egG7L5T5vZAePhuOZ6kyyXT2YF9s0ZL8Y?e=KC00TI" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Diploma</a>
+  <a class="attach media" href="https://www.sugar-network.org/en/projects/player-0-2024-25/" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Media (Sugar Network)</a>
+  <a class="attach media" href="https://www.utporto.pt/noticias/equipas-da-pos-graduacao-em-gti-da-porto-design-factory-representaram-portugal-na-sugar-expo-na-sap-labs" target="_blank" rel="noopener"><svg><use href="#i-link"/></svg>Media (news)</a><span class="tag">systems-innovation</span><span class="tag">design-thinking</span><span class="tag">user-research</span><span class="tag">behavioural-design</span><span class="tag">ux-design</span><span class="tag">prototyping</span><span class="tag">innovation-management</span><span class="tag">agile</span><span class="tag">tokenisation</span><span class="tag">communication</span></div>
+        </div>
+      </article>
+      <article class="entry" id="minho-msc" data-nav="MSc Engineering Project Management" data-sub="2018–20">
+        <div class="when">Sep. 2018 – Jul. 2020<span class="where">Guimarães (Portugal)</span></div>
+        <div>
+          <h3><span class="org">Master&#39;s degree in Engineering Project Management (coursework)</span><span class="title">University of Minho</span></h3>
+          <p class="note">The first research plan, as a visiting fellow at a European institution, did not proceed; the second research plan is currently under way. MSc. coursework, while dissertation is pending conclusion, corresponds to a Specialisation Diploma.</p>
+          <div class="courses"><span class="courses-label">Course areas</span><span class="tag course">Project, Programme and Portfolio Management</span><span class="tag course">Information Systems</span><span class="tag course">Team and Communication</span><span class="tag course">Production Systems</span><span class="tag course">Strategic and Organisational Management</span><span class="tag course">Innovation Management &amp; Marketing</span><span class="tag course">Economic Evaluation &amp; Risk</span><span class="tag course">Quality, Environment and Safety</span><span class="tag course">PM Competences</span><span class="tag course">Facility &amp; Asset Management</span></div>
+          <div class="meta-row">
+  <a class="attach letter" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICK1TAAAAAAAQmV-MOcIYuGYQikG_oNJPg?e=5DW09a" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Recommendation Letter</a>
+  <a class="attach diploma" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICK_zAAAAAAAa4hBTPDi0F5Zc9U_c535tE?e=Ae9fyc" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Diploma</a><span class="tag">project-management</span><span class="tag">information-systems</span><span class="tag">innovation-management</span><span class="tag">quality</span><span class="tag">risk</span><span class="tag">asset-management</span></div>
+        </div>
+      </article>
+      <article class="entry" id="porto-ce" data-nav="Circular Economy training" data-sub="2018–19">
+        <div class="when">Sep. 2018 – Feb. 2019<span class="where">Porto (Portugal)</span></div>
+        <div>
+          <h3><span class="org">Continuous Training Unit in Circular Economy</span><span class="title">University of Porto</span></h3>
+          <div class="courses"><span class="courses-label">Course areas</span><span class="tag course">Circular Economy</span><span class="tag course">Environmental Law</span><span class="tag course">Environmental Economics</span><span class="tag course">Circular Business Modelling</span></div>
+          <div class="meta-row">
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKYTEAAAAAAaoWytsm_MpcPcVce4tJ9nI?e=7B6Rbu" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a><span class="tag">circular-economy</span><span class="tag">environmental-law</span><span class="tag">environmental-economics</span><span class="tag">business-modelling</span></div>
+        </div>
+      </article>
+      <article class="entry" id="minho-bsc" data-nav="BSc Biomedical Engineering" data-sub="2014–18">
+        <div class="when">Sep. 2014 – Jul. 2018<span class="where">Braga (Portugal)</span></div>
+        <div>
+          <h3><span class="org">Bachelor&#39;s degree in Biomedical Engineering Sciences</span><span class="title">University of Minho</span></h3>
+          <div class="courses"><span class="courses-label">Course areas</span><span class="tag course">Human Physiology</span><span class="tag course">Biomaterials</span><span class="tag course">Molecular &amp; Cellular Biology</span><span class="tag course">Physics</span><span class="tag course">Electromagnetism</span><span class="tag course">Organic &amp; Biochemistry</span><span class="tag course">Algebra</span><span class="tag course">Calculus</span><span class="tag course">Statistics</span><span class="tag course">Bioinformatics, Programming &amp; Clinical Databases</span><span class="tag course">Electronic Labs, Instrumentation &amp; Signal Processing</span><span class="tag course">Operations Research &amp; Numerical Methods</span><span class="tag course">Costs Engineering</span><span class="tag course">Heat &amp; Mass Transfer</span><span class="tag course">Solids &amp; Fluids Mechanics</span><span class="tag course">Hospital Management, Safety &amp; Clinical Support</span><span class="tag course">Quality &amp; Reliability</span></div>
+          <div class="meta-row">
+  <a class="attach diploma" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKmjIAAAAAASsOIps8ejfi1RgfZ1IafG0?e=FFdeP1" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Diploma</a><span class="tag">biomedical-engineering</span><span class="tag">engineering-sciences</span><span class="tag">bioinformatics</span><span class="tag">healthcare</span></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="cv" id="courses" data-label="Courses">
+      <h2 class="serif">Courses</h2>
+      <div class="cert-group" id="cert-ai-python" data-nav="AI Python Programming Introduction course">
+        <ul class="list">
+          <li><span class="date">ongoing</span><span><span class="what">AI Python Programming Introduction course</span> <span class="detail">· DeepLearning.AI</span></span></li>
+        </ul>
+      </div>
+      <div class="cert-group" id="cert-cynefin" data-nav="The Cynefin Co. Academy courses">
+        <h3>The Cynefin Co. Academy courses</h3>
+        <ul class="list">
+          <li><span class="date">2023</span><span><span class="what">SenseMaker® QuickStart</span></span></li>
+          <li><span class="date">2023</span><span><span class="what">Narrative Basecamp</span></span></li>
+        </ul>
+      </div>
+      <div class="cert-group" id="cert-ecosystem" data-nav="Ecosystem Services, Business and Finance course">
+        <ul class="list">
+          <li><span class="date">2020</span><span><span class="what">Ecosystem Services, Business and Finance course</span> <span class="detail">· Lisbon School of Economics and Management</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKJDEAAAAAAQEb_wWhQ5sRZAE-PZomFJo?e=vX9jX9" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+        </ul>
+      </div>
+      <div class="cert-group" id="cert-eit" data-nav="EIT Climate-KIC courses">
+        <h3>EIT Climate-KIC courses</h3>
+        <ul class="list">
+          <li><span class="date">2021</span><span><span class="what">Innovation through Circular Economy in the Food Sector course</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKxjAAAAAAAcHYHtZisJdecreUQ5Jr77A?e=4G8CSu" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+          <li><span class="date">2020</span><span><span class="what">Fundamentals of Systems Innovation and Systems Facilitation course</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKxzAAAAAAAZLNVsC9-7udCSAOjJqWs4E?e=PAfp8i" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+        </ul>
+      </div>
+      <div class="cert-group" id="cert-pm" data-nav="Project Management">
+        <h3>Project Management</h3>
+        <ul class="list">
+          <li><span class="date">2019</span><span><span class="what">Project Management Associate certification, IPMA Level D</span> <span class="detail">· APOGEP</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICK9DAAAAAAAffGWIj_XI_co0VE6pxFzoQ?e=I4Qk68" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+          <li><span class="date">2019</span><span><span class="what">PMI Certification Preparation course</span> <span class="detail">· Winning</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKIjEAAAAAAYeTbyKiJKqz0iAod7VzXZA?e=8d17OD" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+        </ul>
+      </div>
+      <div class="cert-group" id="cert-languages" data-nav="Languages">
+        <h3>Languages</h3>
+        <ul class="list">
+          <li><span class="date">2022</span><span><span class="what">Linguaskill, Level C1 certification</span> <span class="detail">· Knightsbridge / Cambridge English</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICK4jEAAAAAATKOk4wrvXovXDhd3HeIiv8?e=HlVT4R" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+          <li><span class="date">2014</span><span><span class="what">Certificate in Advanced English (CAE), Level C1 certification</span> <span class="detail">· Cambridge English</span>
+  <a class="attach certificate" href="https://1drv.ms/b/c/8a19d365ff2f0085/IQCFAC__ZdMZIICKzjAAAAAAAQDxrmFy7xjrei_ZGdTbXGs?e=qH5wQq" target="_blank" rel="noopener"><svg><use href="#i-doc"/></svg>Certificate</a></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cv" id="participations" data-label="Participations">
+      <h2 class="serif">Participations</h2>
+      <p class="section-note">This section is under construction.</p>
+      <ul class="list">
+        <li><span class="date">2025</span><span><span class="what">Sugar Network Expo</span>, SAP Labs, San Francisco (USA) <span class="detail">· presented the final project (CEiiA consortium)</span></span></li>
+        <li><span class="date">2019</span><span><span class="what">Circular Economy Hackathon</span>, Kyiv (Ukraine) <span class="detail">· featured speaker and mentor</span></span></li>
+        <li><span class="date">2019</span><span><span class="what">Civitas Mobility Forum</span>, Graz (Austria) <span class="detail">· attendee</span></span></li>
+        <li><span class="date">2019</span><span><span class="what">Future Cities work meeting</span>, Belgrade (Serbia) <span class="detail">· attendee</span></span></li>
+        <li><span class="date">2019</span><span><span class="what">Greencycle stakeholders meeting</span>, Ptuj (Slovenia) <span class="detail">· attendee</span></span></li>
+        <li><span class="date">Nov. 2019</span><span><span class="what">PIP International Workshop</span>, Amsterdam (The Netherlands) <span class="detail">· participant, by application</span></span></li>
+        <li><span class="date">2019</span><span><span class="what">Circular Cities Initiative</span>, Guimarães (Portugal) <span class="detail">· attendee</span></span></li>
+        <li><span class="date">2019</span><span><span class="what">Meeting of the national network &#34;Alimentar Cidades Sustentáveis&#34;</span>, Portugal <span class="detail">· attendee</span></span></li>
+        <li><span class="date">2016-2018</span><span><span class="what">VERSUS III</span>, Braga (Portugal) <span class="detail">· organiser (U.Dream Braga), 1000+ attendees</span></span></li>
+      </ul>
+    </section>
+
+  </main>
+</div>
+
+
+<footer>Built from cv.yaml on 24 Nov 2026</footer>
+<script src="script.js"></script>
 </body>
 </html>
